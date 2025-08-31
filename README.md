@@ -1,28 +1,24 @@
-# IA Révisions Étudiant – MVP (Streamlit)
+# 📚 IA Révisions Étudiant – MVP
 
-Prototype pour transformer des cours en **fiches**, **flashcards** (Anki CSV) et **QCM**.
-- **Frontend**: Streamlit
-- **LLM**: OpenAI (Chat Completions) – modèle par défaut `gpt-4o-mini`
-- **Parsing**: PDF/DOCX/PPTX/TXT
+Prototype d’une application web (Streamlit + OpenAI) qui aide les étudiants à transformer leurs cours en :
 
-## Lancer en local
+- 📝 **Fiches de révision** (styles différents)  
+- 🃏 **Flashcards** (export Anki CSV + Quizlet TSV)  
+- ✅ **QCM automatiques**  
+- 💬 **Chat avec le cours** (poser des questions et obtenir des réponses basées uniquement sur le texte)  
+- 🌍 **Traduction automatique** (fiches, flashcards, QCM)  
+- 📈 **Suivi de progression** (% des actions réalisées)  
+
+---
+
+## 🚀 Démo
+👉 Hébergé sur **Streamlit Cloud**  
+(Lien à insérer ici quand ton app sera publique : par ex. `https://nom-de-ton-app.streamlit.app`)
+
+---
+
+## ⚙️ Installation locale (optionnel pour dev)
+Clone le dépôt :
 ```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-export OPENAI_API_KEY=sk-...  # Windows: set OPENAI_API_KEY=...
-export OPENAI_MODEL=gpt-4o-mini
-streamlit run app.py
-```
-
-## Déployer sur Streamlit Community Cloud
-1. Pousse ce dossier sur un repo GitHub (public pour la démo).
-2. Va sur https://streamlit.io/cloud → **New app** → choisis ton repo, branche, et `app.py`.
-3. Dans **Settings → Secrets**, colle :
-```toml
-OPENAI_API_KEY = "sk-..."
-OPENAI_MODEL = "gpt-4o-mini"
-```
-4. **Deploy**. Ouvre l’URL et teste avec `sample/chapitre_exemple.txt`.
-
-> En dev local, tu peux aussi créer `.streamlit/secrets.toml` avec le contenu ci-dessus,
-> mais **ne le pousse jamais** sur GitHub.
+git clone https://github.com/votre-compte/ia-revisions-mvp.git
+cd ia-revisions-mvp
