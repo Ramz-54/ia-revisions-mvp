@@ -1,0 +1,6 @@
+Chapitre : Potentiels d’action (Neurosciences)
+- Le neurone transmet des signaux via des variations de potentiel électrique.
+- Lois: tout-ou-rien, période réfractaire.
+- Canaux Na+ et K+ : ouverture/fermeture séquentielle.
+- Propagation saltatoire sur fibres myélinisées.
+- Applications: anesthésiques locaux bloquent les canaux Na+.
